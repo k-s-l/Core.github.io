@@ -1,0 +1,249 @@
+/*CSS RESET*/
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+.logo{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 110%;
+    border:2px rgb(71, 26, 26);
+    border-radius: 250px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+
+}
+.nav-list{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav-list li{
+    list-style: none;
+    padding: 20px 27px;
+
+    
+}
+.nav-list a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color:white;
+    
+
+}
+.nav-list a:hover{
+    background-color:rgb(224, 89, 11);
+    color:white;
+    padding:10px 12px;
+    border:2px solid white;
+    border-radius: 18px;
+
+}
+.rightNav{
+    width: 50%;
+    text-align: right;
+    padding:0 23px;
+    margin: 25px 27px;
+    border: 2px;
+}
+#search{
+    padding:5px;
+    border:2px solid grey;
+    border-radius: 12px;    
+}
+.background{
+    background:rgba(0, 0, 0, 0.7) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.first-section{
+    height:100vh;
+   
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    max-width: 50%;
+    margin: auto;
+    height: 68%;
+}
+.first-half{
+    width:75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-big{
+    font-size: 30px;
+
+}
+.text-small{
+    font-size: 15px ;
+
+}
+.secondhalf{
+    width:30%;
+}
+.secondhalf img{
+    width:70%;
+    /*padding:4px 0px;*/
+    border: 2px solid white;
+    border-radius: 80px;
+    display:block;
+    margin: auto;
+}
+.sss{
+    padding:8px 20px;
+    margin:7px 3px;
+    border:3px solid white;
+    color:white;
+    border-radius: 8px;
+    background-color:rgb(224, 89, 11);
+    color:white;
+    cursor: pointer;
+
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.const{
+    padding:8px 20px;
+    margin:7px 3px;
+    border:3px solid white;
+    border-radius: 8px;
+    background:none;
+    color:white;
+    cursor: pointer;
+
+}
+.section{
+    height:350px;
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    max-width:80%;
+    margin: auto;
+
+}
+.left{
+    flex-direction: row-reverse;
+
+}
+.paras{
+    padding:0px 35px;
+}
+.sectionTag{
+    font-size: 37px;
+    font-family: 'Bebas Neue', cursive;
+    padding:16px 0px;
+}
+.thumnail{
+    width:400px;
+}
+.thumbnail img{
+    width:230px;
+    height:230px;
+    border:3px solid black;
+    border-radius:26px;
+    margin-top: 19px;
+
+}
+.contact{
+    background-color: rgb(204, 199, 202);
+    height:800px;
+}
+.center{
+    font-size: 39px;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    padding:26px 0px;
+}
+.form{
+    max-width:500px;
+    margin:42px auto;
+}
+.form-input{
+    margin:14px 0px;
+    width:100%;
+    padding:4px 2px;
+    font-size: 18px;
+    border: 2px solid grey;
+    border-radius: 6px;
+}
+.button{
+    margin:5px 640px;
+}
+.btn{
+
+    padding:10px 20px;
+    margin:5px 3px;
+    border:3px solid white;
+    color:white;
+    border-radius: 8px;
+    background-color:orangered;
+    color:white;
+    cursor: pointer;
+    
+    }
+    .foot{
+        background-color: black;
+        color:white;
+        padding:3px;
+    }
+    .text-center{
+        text-align: center;
+
+    }
+    .burger{
+        display:none;
+        position:abbsolute;
+        cursor: pointer;
+        right:5%;
+        top:15%;
+
+    }
+    .line{
+        width:33px;
+        background-color: white;
+        height:4px;
+        margin:5px 3px;
+    }
+
+
+
+    @media only screen and(max-width:1140px){
+        .nav-list{
+            flex-direction: column;
+        }
+        .navbar{
+            flex-direction: column;
+        }
+        .rightNav{
+            text-align: center;
+        }
+        #search{
+            width:100%;
+        }
+        .burger{
+            display:block;
+        }
+        
+    }
+
